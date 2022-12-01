@@ -26,8 +26,8 @@
   */
  const elvesFoodItems = elvesString.map((str) => str.split('\n').map(Number))
 
- let sum = elvesFoodItems.map(arr => arr.reduce ((sum,item) => sum += item,0)).sort((a,b) => a -b)
-     console.log(Math.max(...sum))
+ let sum = elvesFoodItems.map(arr => arr.reduce ((sum,item) => sum += item,0)) 
+     return Math.max(...sum)
 
 
 
